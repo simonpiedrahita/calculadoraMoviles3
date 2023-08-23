@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Banner from './components/Banner';
+import Footer from './components/Footer';
+import {styles, myimage} from './assets/styles/styles1'
 
 export default function App() {
+  let mymess = "Este es el pie de la GUI";
+  let mimage= "calc2.jpg";
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+        <Banner imagename={mimage}></Banner>
+       <Text style={[styles.texts,{fontWeight:'bold',color:'blue'}]}>Mi Calculadora Básica</Text>
+      <Text style={{color:'gray',backgroundColor:'black'}}>Calculando...</Text>
+      <Footer message={mymess}/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
+
+
