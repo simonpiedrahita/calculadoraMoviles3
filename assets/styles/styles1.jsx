@@ -3,14 +3,26 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'orange',
+      backgroundColor: 'cian',
       alignItems: 'center',
       justifyContent: 'center',
     },
     texts:{
       color:'red',
-      fontSize:22
+      fontSize:'22'
+    },
+    tInputs:{
+      backgroundColor:'#FFFFFF',
+      padding:'10px 10px',
+      borderColor:'yellow',
+      borderRadius:'7px',
+      fontColor:'black',            
+    },
+    wTittle:{
+      fontSize:'20px',
+      color:'#FFFFFF',
     }
+     
   });
 
   const myimage = StyleSheet.create({
